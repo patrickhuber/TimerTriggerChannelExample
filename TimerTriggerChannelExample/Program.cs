@@ -5,12 +5,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TimerTriggerChannelExample;
 
-Console.WriteLine("Hello, World!");
-/*
-builder.Services.Configure<TransientFaultHandlingOptions>(
-    builder.Configuration.GetSection(
-        key: nameof(TransientFaultHandlingOptions)));
-*/
 IHost host = Host.CreateDefaultBuilder()
     .ConfigureServices((host, services) =>
     {
